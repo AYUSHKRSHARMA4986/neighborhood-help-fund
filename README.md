@@ -1,73 +1,46 @@
-# React + TypeScript + Vite
+# 🏘️ Neighborhood Help Fund (Stellar Testnet)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Level 1 - White Belt Submission**
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📖 Project Description
 
-## React Compiler
+The **Neighborhood Help Fund** is a Simple Payment dApp built on the Stellar testnet. It acts as a financial foundation for a broader community forum, allowing users to securely connect their Freighter wallets, view their live XLM balances, and send micro-donations to support neighbors in need.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## 🛠️ Setup Instructions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+To run this project locally, ensure you have Node.js installed, then execute the following commands in your terminal:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+  # 1. Clone the repository
+  git clone [https://github.com/AYUSHKRSHARMA4986/neighborhood-help-fund.git](https://github.com/AYUSHKRSHARMA4986/neighborhood-help-fund.git)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+  # 2. Enter the project directory
+  cd neighborhood-help-fund
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  # 3. Install the required dependencies
+  npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  # 4. Start the local development server
+  npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+[Note: Once the server starts, click the "http://localhost:5173" link in your terminal to view the app. Ensure your Freighter Wallet extension is installed and set to the Testnet.]
+
+
+## 📸 Screenshots
+
+
+  #1. Wallet Connected State
+  <img width="1230" height="918" alt="Screenshot 2026-06-16 143106" src="https://github.com/user-attachments/assets/bf1a3d4c-9a54-44b4-883e-58f0b971690d" />
+
+  
+  #2. Balance Displayed
+  <img width="1230" height="918" alt="Screenshot 2026-06-16 143106" src="https://github.com/user-attachments/assets/fd850173-ecd4-405f-aea9-17e89f3fd612" />
+
+  
+  #3. Successful Testnet Transaction
+  <img width="1828" height="816" alt="Screenshot 2026-06-16 143425" src="https://github.com/user-attachments/assets/6fbef76e-ad9f-45d5-a5ef-f168f9a190e6" />
+  
+  #4. Transaction Result is Shown to the User
+  <img width="1202" height="922" alt="Screenshot 2026-06-16 143257" src="https://github.com/user-attachments/assets/4f3a6a9f-eb4e-4fbf-aa76-e67e7f33743a" />
